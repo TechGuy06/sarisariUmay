@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="logo-container">
+      <a href="#" class="logo">
+          <img src="images/logo2.png" alt="logo">
+      </a>
+    </div>
+    <nav class="navbar">
+        <a href="index.html" class="button-81">Home</a>
+    </nav>
+  </header>
+  <main>
+    <section class="stock-management">
+      <h1>Stock Management</h1>
+      <table class="stock-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Current Stock</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="images/jeans1.png" alt="Jeans 1"></td>
+            <td>
+              <h3>Jeans 1</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="jeans1-stock">0</span></td>
+            <td><button onclick="increaseStock('jeans1')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/jeans2.png" alt="Jeans 2"></td>
+            <td>
+              <h3>Jeans 2</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="jeans2-stock">0</span></td>
+            <td><button onclick="increaseStock('jeans2')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/jeans3.png" alt="Jeans 3"></td>
+            <td>
+              <h3>Jeans 3</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="jeans3-stock">0</span></td>
+            <td><button onclick="increaseStock('jeans3')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/jeans4.png" alt="Jeans 4"></td>
+            <td>
+              <h3>Jeans 4</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="jeans4-stock">0</span></td>
+            <td><button onclick="increaseStock('jeans4')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/t-shirt1.png" alt="T-shirt 1"></td>
+            <td>
+              <h3>T-shirt 1</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="tshirt1-stock">0</span></td>
+            <td><button onclick="increaseStock('tshirt1')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/t-shirt2.png" alt="T-shirt 2"></td>
+            <td>
+              <h3>T-shirt 2</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="tshirt2-stock">0</span></td>
+            <td><button onclick="increaseStock('tshirt2')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/t-shirt3.png" alt="T-shirt 3"></td>
+            <td>
+              <h3>T-shirt 3</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="tshirt3-stock">0</span></td>
+            <td><button onclick="increaseStock('tshirt3')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/t-shirt4.png" alt="T-shirt 4"></td>
+            <td>
+              <h3>T-shirt 4</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="tshirt4-stock">0</span></td>
+            <td><button onclick="increaseStock('tshirt4')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/perfume1.png" alt="Perfume 1"></td>
+            <td>
+              <h3>Perfume 1</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="perfume1-stock">0</span></td>
+            <td><button onclick="increaseStock('perfume1')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/perfume2.png" alt="Perfume 2"></td>
+            <td>
+              <h3>Perfume 2</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="perfume2-stock">0</span></td>
+            <td><button onclick="increaseStock('perfume2')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/perfume3.png" alt="Perfume 3"></td>
+            <td>
+              <h3>Perfume 3</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="perfume3-stock">0</span></td>
+            <td><button onclick="increaseStock('perfume3')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/perfume4.png" alt="Perfume 4"></td>
+            <td>
+              <h3>Perfume 4</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="perfume4-stock">0</span></td>
+            <td><button onclick="increaseStock('perfume4')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/sando1.png" alt="Sando 1"></td>
+            <td>
+              <h3>Sando 1</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="sando1-stock">0</span></td>
+            <td><button onclick="increaseStock('sando1')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/sando2.png" alt="Sando 2"></td>
+            <td>
+              <h3>Sando 2</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="sando2-stock">0</span></td>
+            <td><button onclick="increaseStock('sando2')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/sando3.png" alt="Sando 3"></td>
+            <td>
+              <h3>Sando 3</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="sando3-stock">0</span></td>
+            <td><button onclick="increaseStock('sando3')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/sando4.png" alt="Sando 4"></td>
+            <td>
+              <h3>Sando 4</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="sando4-stock">0</span></td>
+            <td><button onclick="increaseStock('sando4')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/toy1.png" alt="Toy 1"></td>
+            <td>
+              <h3>Toy 1</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="toy1-stock">0</span></td>
+            <td><button onclick="increaseStock('toy1')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/toy2.png" alt="Toy 2"></td>
+            <td>
+              <h3>Toy 2</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="toy2-stock">0</span></td>
+            <td><button onclick="increaseStock('toy2')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/toy3.png" alt="Toy 3"></td>
+            <td>
+              <h3>Toy 3</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="toy3-stock">0</span></td>
+            <td><button onclick="increaseStock('toy3')" class="button-81">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/toy4.png" alt="Toy 4"></td>
+            <td>
+              <h3>Toy 4</h3>
+              <p>This piece boasts clean lines and luxurious fabric, draping elegantly over your frame.</p>
+            </td>
+            <td><span id="toy4-stock">0</span></td>
+            <td><button onclick="increaseStock('toy4')" class="button-81">Add Stock</button></td>
+          </tr>
+          <!-- Add more items as needed -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
